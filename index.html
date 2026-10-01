@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ADE DWI DJOAN RAHARJO | Portfolio</title>
+    <title>ADE DWI DJOAN RAHARJO</title>
 
-    <!-- Font Awesome untuk ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
         * {
@@ -18,7 +19,7 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             background: #f5f5f5;
             color: #222;
         }
@@ -28,7 +29,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: #111;
+            background: #111827;
             padding: 18px 8%;
             display: flex;
             justify-content: space-between;
@@ -36,7 +37,7 @@
             z-index: 1000;
         }
 
-        nav .logo {
+        .logo {
             color: white;
             font-size: 20px;
             font-weight: bold;
@@ -44,24 +45,23 @@
 
         nav ul {
             display: flex;
-            list-style: none;
             gap: 25px;
+            list-style: none;
         }
 
-        nav ul li a {
+        nav ul a {
             color: white;
             text-decoration: none;
-            font-size: 14px;
         }
 
-        nav ul li a:hover {
-            color: #7c3aed;
+        nav ul a:hover {
+            color: #a78bfa;
         }
 
         /* HERO */
         .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, #111827, #4c1d95);
+            background: linear-gradient(135deg, #111827, #5b21b6);
             color: white;
             display: flex;
             justify-content: center;
@@ -74,44 +74,51 @@
             max-width: 800px;
         }
 
+        /* FOTO */
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
         .hero h1 {
-            font-size: 45px;
-            margin: 15px 0;
+            font-size: 42px;
+            margin: 10px 0;
         }
 
         .hero h2 {
-            font-size: 22px;
+            font-size: 21px;
             font-weight: normal;
-            color: #d8b4fe;
+            color: #ddd6fe;
         }
 
         .hero p {
-            margin: 20px 0;
-            font-size: 17px;
+            margin: 18px 0;
             line-height: 1.7;
         }
 
+        /* TOMBOL */
         .btn {
             display: inline-block;
-            margin-top: 15px;
             padding: 12px 25px;
             background: white;
-            color: #4c1d95;
+            color: #5b21b6;
             text-decoration: none;
             border-radius: 25px;
             font-weight: bold;
+            margin-top: 10px;
         }
 
-        .btn:hover {
-            transform: translateY(-3px);
-        }
-
-        /* SOCIAL MEDIA */
+        /* SOSIAL MEDIA */
         .social-icons {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
         .social-icons a {
@@ -122,15 +129,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
             color: white;
+            text-decoration: none;
             font-size: 20px;
             transition: 0.3s;
         }
 
         .social-icons a:hover {
             background: white;
-            color: #4c1d95;
+            color: #5b21b6;
             transform: translateY(-5px);
         }
 
@@ -142,7 +149,7 @@
         .section-title {
             text-align: center;
             font-size: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         /* ABOUT */
@@ -158,7 +165,7 @@
             color: #555;
         }
 
-        /* SKILLS */
+        /* SKILL */
         .skills {
             background: #f5f5f5;
         }
@@ -175,11 +182,6 @@
             text-align: center;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-8px);
         }
 
         .skill-card i {
@@ -209,10 +211,10 @@
         }
 
         .portfolio-card {
-            padding: 35px 20px;
             background: #f5f5f5;
-            border-radius: 15px;
+            padding: 35px 20px;
             text-align: center;
+            border-radius: 15px;
         }
 
         .portfolio-card i {
@@ -221,15 +223,7 @@
             margin-bottom: 15px;
         }
 
-        .portfolio-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .portfolio-card p {
-            color: #666;
-        }
-
-        /* CONTACT */
+        /* KONTAK */
         .contact {
             background: #111827;
             color: white;
@@ -247,26 +241,17 @@
             color: white;
             text-align: center;
             padding: 20px;
-            font-size: 14px;
         }
 
-        /* RESPONSIVE */
+        /* HP */
         @media (max-width: 768px) {
-
-            nav {
-                padding: 15px 5%;
-            }
 
             nav ul {
                 display: none;
             }
 
             .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero h2 {
-                font-size: 18px;
+                font-size: 30px;
             }
 
             .skill-container {
@@ -279,12 +264,14 @@
         }
 
         @media (max-width: 480px) {
+
             .skill-container {
                 grid-template-columns: 1fr;
             }
 
-            .hero h1 {
-                font-size: 27px;
+            .profile-photo {
+                width: 130px;
+                height: 130px;
             }
         }
     </style>
@@ -306,10 +293,15 @@
     </nav>
 
 
-    <!-- HERO -->
+    <!-- BERANDA -->
     <section class="hero" id="home">
 
         <div class="hero-content">
+
+            <!-- FOTO PROFIL -->
+            <img src="profile.jpg"
+                 alt="Foto ADE DWI DJOAN RAHARJO"
+                 class="profile-photo">
 
             <p>Halo Semua 👋</p>
 
@@ -318,8 +310,7 @@
             <h2>Pelajar SMK Negeri 1 Kaliwungu</h2>
 
             <p>
-                Kelas X TJKT 1
-                <br>
+                Kelas X TJKT 1<br>
                 Teknik Jaringan Komputer dan Telekomunikasi
             </p>
 
@@ -327,25 +318,19 @@
                 Hubungi Saya
             </a>
 
-            <!-- SOCIAL MEDIA -->
+            <!-- YOUTUBE & TIKTOK -->
             <div class="social-icons">
 
-                <!-- YOUTUBE -->
                 <a href="https://www.youtube.com/channel/UCpCVFuMWu0c-9CI4_zvjKRg"
                    target="_blank"
                    title="YouTube">
-
                     <i class="fa-brands fa-youtube"></i>
-
                 </a>
 
-                <!-- TIKTOK -->
                 <a href="https://www.tiktok.com/@__han41"
                    target="_blank"
                    title="TikTok">
-
                     <i class="fa-brands fa-tiktok"></i>
-
                 </a>
 
             </div>
@@ -363,9 +348,9 @@
         <p>
             Halo, saya <b>ADE DWI DJOAN RAHARJO</b>.
             Saya adalah pelajar SMK Negeri 1 Kaliwungu
-            kelas X TJKT 1. Saya sedang mempelajari berbagai
-            hal tentang komputer, jaringan, teknologi, dan
-            pembuatan website.
+            kelas X TJKT 1. Saya sedang belajar tentang
+            komputer, jaringan, teknologi, desain grafis,
+            dan pembuatan website.
         </p>
 
     </section>
@@ -381,7 +366,7 @@
             <div class="skill-card">
                 <i class="fa-solid fa-palette"></i>
                 <h3>Desain Grafis</h3>
-                <p>Mempelajari desain dan pembuatan karya visual.</p>
+                <p>Belajar membuat desain dan karya visual.</p>
             </div>
 
             <div class="skill-card">
@@ -393,13 +378,13 @@
             <div class="skill-card">
                 <i class="fa-solid fa-network-wired"></i>
                 <h3>Jaringan</h3>
-                <p>Mempelajari jaringan komputer dan perangkat jaringan.</p>
+                <p>Mempelajari jaringan dan perangkat jaringan.</p>
             </div>
 
             <div class="skill-card">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Design</h3>
-                <p>Mempelajari HTML, CSS, dan pembuatan website.</p>
+                <p>Mempelajari HTML, CSS, dan website.</p>
             </div>
 
         </div>
@@ -423,7 +408,7 @@
             <div class="portfolio-card">
                 <i class="fa-solid fa-globe"></i>
                 <h3>Website</h3>
-                <p>Website pribadi dan project sekolah.</p>
+                <p>Project website pribadi dan sekolah.</p>
             </div>
 
             <div class="portfolio-card">
@@ -443,12 +428,12 @@
         <h2 class="section-title">Kontak</h2>
 
         <p>
-            Terima kasih sudah mengunjungi website saya.
+            Hubungi saya melalui email:
         </p>
 
-        <a href="mailto:emailkamu@gmail.com" class="btn">
+        <a href="mailto:h4nn77jr@gmail.com" class="btn">
             <i class="fa-solid fa-envelope"></i>
-            Email Saya
+            h4nn77jr@gmail.com
         </a>
 
     </section>
@@ -457,13 +442,9 @@
     <!-- FOOTER -->
     <footer>
 
-        <p>
-            © 2026 ADE DWI DJOAN RAHARJO
-        </p>
+        <p>© 2026 ADE DWI DJOAN RAHARJO</p>
 
-        <p>
-            Pelajar SMK Negeri 1 Kaliwungu • X TJKT 1
-        </p>
+        <p>SMK Negeri 1 Kaliwungu • X TJKT 1</p>
 
     </footer>
 
